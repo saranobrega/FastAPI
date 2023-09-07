@@ -17,20 +17,19 @@ To run this API locally or deploy it to a server, follow these instructions:
 - Pickle
 - Pandas
 
+### API Endpoints
+- /: The root endpoint that returns a welcome message.
+- /{name}: An endpoint that accepts a parameter and returns a personalized message.
+- /predict: POST endpoint to make predictions on bank notes. Send a JSON object with measurements (variance, skewness, curtosis, entropy) to get a prediction.
 You can install the required dependencies using pip:
 
-```bash
+### Bash
 pip install fastapi uvicorn numpy pickle pandas
 
 ### Running the API
 To start the API, run the following command in your terminal:
 
 uvicorn app:app --host 127.0.0.1 --port 8000 --reload
-
-### API Endpoints
-- /: The root endpoint that returns a welcome message.
-- /{name}: An endpoint that accepts a parameter and returns a personalized message.
-- /predict: POST endpoint to make predictions on bank notes. Send a JSON object with measurements (variance, skewness, curtosis, entropy) to get a prediction.
 
 ### Example Usage
 To make a prediction, send a POST request to http://127.0.0.1:8000/predict with JSON data like this:
