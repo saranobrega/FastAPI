@@ -43,7 +43,8 @@ To make a prediction, send a POST request to http://127.0.0.1:8000/predict with 
 
 
 # FastAPI Books API
-This is a simple FastAPI project for managing books. It includes endpoints for creating, reading, updating, and deleting books.
+- Data Validation, Exception Handling, Status Codes, Swagger Configuration, Python Request Objects
+- This is a simple FastAPI project for managing books. It includes endpoints for creating, reading, updating, and deleting books.
 
 ## Features
 - Get All Books: Retrieve a list of all books.
